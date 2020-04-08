@@ -6,13 +6,12 @@
 
 
 import os
-#from pyltp import Segmentor, Postagger, Parser, NamedEntityRecognizer
 from pyhanlp import *
 
 
 class LtpParser():
 
-    '''ltp基本操作'''
+    '''基本操作'''
     '''postags, netags = self.basic_parser(words)'''
     def basic_parser(self, words):
         postags = list(self.postagger.postag(words))
